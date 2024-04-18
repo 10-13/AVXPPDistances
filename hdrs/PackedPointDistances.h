@@ -10,37 +10,37 @@ namespace ppdist
     {
         DPackedScalar128 SquareDistancesBetwenSets(DPackedVector256 first, DPackedVector256 second)
         {
-            // res[i] = dist[first[i], second[i]] ^ 2
+            // res[i] = dist[first[2i:2i+1], second[2i:2i+1]] ^ 2
             throw std::runtime_error("Unimplemented");
         }
 
         DPackedScalar128 DistancesBetwenSets(DPackedVector256 first, DPackedVector256 second)
         {
-            // res[i] = dist[first[i], second[i]]
+            // res[i] = dist[first[2i:2i+1], second[2i:2i+1]]
             throw std::runtime_error("Unimplemented");
         }
 
         DPackedScalar128 SquareDistancesToPoints(DVector from, DPackedVector256 to)
         {
-            // res[i] = dist[from, to[i]] ^ 2
+            // res[i] = dist[from, to[2i:2i+1]] ^ 2
             throw std::runtime_error("Unimplemented");
         }
 
         DPackedScalar128 DistancesToPoints(DVector from, DPackedVector256 to)
         {
-            // res[i] = dist[from, to[i]]
+            // res[i] = dist[from, to[2i:2i+1]]
             throw std::runtime_error("Unimplemented");
         }
 
         DPackedScalar128 DotProduct(DPackedVector256 first, DPackedVector256 second)
         {
-            // res[i] = dot[first[i], second[i]]
+            // res[i] = dot[first[2i:2i+1], second[2i:2i+1]]
             throw std::runtime_error("Unimplemented");
         }
 
         DPackedScalar128 CrossProduct(DPackedVector256 first, DPackedVector256 second)
         {
-            // res[i] = cross[first[i], second[i]]
+            // res[i] = cross[first[2i:2i+1], second[2i:2i+1]]
             throw std::runtime_error("Unimplemented");
         }
     }
